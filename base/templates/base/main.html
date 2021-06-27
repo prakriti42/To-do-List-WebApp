@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            padding-top: 50px;
+            background-color: #f8edeb;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+          
+        }
+        p{
+            color: #424344;
+            font-style: bold;
+        }
+        .container{
+            font-family: 'Rubik', sans-serif;
+            margin: auto;
+            max-width: 600px;
+            box-shadow: 10px 10px 5px 0px rgba(184,165,165,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(184,165,165,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(184,165,165,0.75);
+        }
+
+        .header-bar{
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 0px;
+            padding: 30px;
+            border-radius:  5px 5px 0 0;
+            background: rgb(109,58,180);
+            background: linear-gradient(28deg, rgba(109,58,180,1) 9%, rgba(255,5,178,1) 41%, rgba(136,69,252,1) 100%);
+        }
+    
+        .header-bar a {
+            color: #ffffff;
+            font-size: 19px;
+            margin-bottom: 3px;
+        }
+
+        .task-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 22px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #c7c3c3;
+        }
+
+        .task-complete-icon{
+            display: inline-block;
+            margin-right: 5px;
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105,192,105);
+            border-radius: 50%;
+        }
+        .task-incomplete-icon{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+            background-color: rgb(218,218,218);
+            border-radius: 50%;
+        }
+        .delete-link{
+            text-decoration: none;
+            font-weight: 900;
+            color: #a03ba0;
+            font-size: 29px;
+            line-height: o;
+        }
+        #search-add-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        #add-link{
+            color: #a03ba0;
+            text-decoration: none;
+            font-size: 32px;
+            text-shadow: 1px 1px #81413b;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea{
+            border: 1px solid #a03ba0;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+        label{
+            padding-top: 10px !important;
+            display: block;
+        }
+        .button{
+            border: 1px solid #a03ba0;
+            background-color: #f8edeb;
+            color:#a03ba0;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+        }
+        .card-body{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+
+    </div>
+    
+</body>
+</html>

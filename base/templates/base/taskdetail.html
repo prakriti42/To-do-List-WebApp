@@ -1,0 +1,17 @@
+
+{% extends 'base/main.html' %}
+{% block content %}
+
+
+<h1>Task : {{task.title}} <br>
+    Description : {{task.description}} <br>
+    Status : 
+
+    {% if task.complete %}
+    Complete 
+    {% else %}
+    Not Completed 
+    {% endif %}
+</h1>
+
+{% endblock content %}
